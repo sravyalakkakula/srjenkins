@@ -7,7 +7,7 @@
     stages {
         stage ('checkout scm') {
                        steps {
-                git branch: 'master', credentialsId: 'git-hub', url: 'https://github.com/sravyalakkakula/srjenkins'
+                git branch: 'master', credentialsId: 'git-hub', url: 'https://github.com/sravyalakkakula/srjenkins.git'
             }
         }
         stage ('terraform init') {
